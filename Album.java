@@ -8,5 +8,4 @@ public class Album {
 	public double valor;
 	public int qtdeFigurinhas;
 	public ArrayList<Figurinha> figurinhas = new ArrayList<>();
-	
 }

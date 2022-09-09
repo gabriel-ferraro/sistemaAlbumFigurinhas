@@ -13,7 +13,7 @@ public class Colecionador {
 	}
 	
 	//Checa se existem figurinhas repetidas e quantas
-	public void figurinhasRepetidas() {
+	public int figurinhasRepetidas() {
 		int repetidas = 0;
 		
 		for(int i = 0; i < album.figurinhas.size()-1; i++) {
@@ -24,7 +24,14 @@ public class Colecionador {
 				}
 			}
 		}
-		
-		System.out.println("Qtde figurinhas repetidas: " + repetidas);
+		return repetidas;
+	}
+	
+	//subtrai a quantidade de repetidas do tamanho da lista
+	public boolean isAlbumCompleto() {
+		if(album.figurinhas.size() - figurinhasRepetidas() < 677) {
+			return false;
+		}
+		return false;
 	}
 }

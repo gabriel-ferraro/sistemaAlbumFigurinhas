@@ -23,10 +23,11 @@ public class Main {
 			colecionador.album.figurinhas.add(new Figurinha());
 		}
 
-		System.out.printf("Figurinhas que %s possui:\n\n", colecionador.nome);
+		System.out.printf("Lista de figurinhas de %s:\n\n", colecionador.nome);
 		colecionador.figurinhasObtidas();
 		
-		System.out.println("\nFigurinhas repetidas:");
-		colecionador.figurinhasRepetidas();
+		System.out.println("\nFigurinhas repetidas: " + colecionador.figurinhasRepetidas());
+		
+		System.out.println("\nAlbum completo: " + colecionador.isAlbumCompleto());
 	}
 }
